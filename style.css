@@ -1,430 +1,431 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    /* overflow-x: hidden; Ensures no horizontal scroll bar */
-    overflow: auto;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; Ensures no horizontal scroll bar */
+  overflow: auto;
 }
 
 .main-content {
-    flex-grow: 1; /* Allows the element to grow */
+  flex-grow: 1; /* Allows the element to grow */
 }
 /* Ensures that the header has no additional padding or margins that could cause a grey box */
-header, .hero-image {
-    /* margin: 0;
+header,
+.hero-image {
+  /* margin: 0;
     padding: 0; */
-    background: none; /* Removes any background color */
-    margin-top: -60px; /* Pull the hero image up behind the navbar; should be equal to the navbar's height */
-    padding-top: 60px; /* Add padding to push the content down so it starts below the navbar */
+  background: none; /* Removes any background color */
+  margin-top: -60px; /* Pull the hero image up behind the navbar; should be equal to the navbar's height */
+  padding-top: 60px; /* Add padding to push the content down so it starts below the navbar */
 }
 
 main {
-    padding-top: 60px; /* This should be equal to or more than the height of your navbar */
+  padding-top: 60px; /* This should be equal to or more than the height of your navbar */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 footer {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 0px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height:7%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7%;
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px; /* Optional: adds rounded corners for a modern look */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px; /* Optional: adds rounded corners for a modern look */
 }
 
 section img {
-    max-width: 100%; /* Makes sure the image is responsive */
-    height: auto;
-    display: block; /* Centers the image */
-    margin: 0 auto; /* Adds some space around the image */
+  max-width: 100%; /* Makes sure the image is responsive */
+  height: auto;
+  display: block; /* Centers the image */
+  margin: 0 auto; /* Adds some space around the image */
 }
 
 .hero-image {
-    /* Background image related properties */
-    background: url('background.png') no-repeat center center / cover;
-    height: 100vh; /* Adjust if necessary */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    position: relative; /* Necessary for absolutely positioning child elements */
+  /* Background image related properties */
+  background: url("background.png") no-repeat center center / cover;
+  height: 100vh; /* Adjust if necessary */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative; /* Necessary for absolutely positioning child elements */
 }
 .transparent-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Ensures the nav is above other content */
-    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for visibility */
-    background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures the nav is above other content */
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for visibility */
+  background-color: black;
 }
 
 .transparent-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .transparent-nav li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
 }
 
 .transparent-nav li a:hover {
-    color: #ddd;
+  color: #ddd;
 }
 
 /* Adjustments to the hero text and button */
 h1 {
-    margin-top: 10px; /* Adjust as needed to position below the nav */
-    font-size: 2.5em; /* Adjust size as needed */
+  margin-top: 10px; /* Adjust as needed to position below the nav */
+  font-size: 2.5em; /* Adjust size as needed */
 }
 
 .subtitle {
-    margin-top: 20px;
-    font-size: 1.2em; /* Adjust size as needed */
+  margin-top: 20px;
+  font-size: 1.2em; /* Adjust size as needed */
 }
 
 .cta-button {
-    margin-top: 30px;
-    /* Other styles remain the same */
+  margin-top: 30px;
+  /* Other styles remain the same */
 }
 
 .guide-section .container {
-    text-align: center; /* Centers the title and subtitle */
-    /* Rest of the styles */
+  text-align: center; /* Centers the title and subtitle */
+  /* Rest of the styles */
 }
 
 .section-title .subtitle {
-    display: block; /* Makes the subtitle its own line */
-    color: #aaa; /* A lighter shade for the subtitle, adjust as needed */
-    font-size: 0.85em; /* Smaller font size for the subtitle */
-    margin-bottom: 0.25em; /* Spacing between subtitle and main title */
-    text-transform: uppercase; /* Makes the subtitle uppercase for stylistic effect */
+  display: block; /* Makes the subtitle its own line */
+  color: #aaa; /* A lighter shade for the subtitle, adjust as needed */
+  font-size: 0.85em; /* Smaller font size for the subtitle */
+  margin-bottom: 0.25em; /* Spacing between subtitle and main title */
+  text-transform: uppercase; /* Makes the subtitle uppercase for stylistic effect */
 }
 
 .section-title h2 {
-    display: inline-block; /* Allows the title to have width for the line */
-    font-size: 2.5em; /* Larger font size for the main title */
-    line-height: 1.1; /* Adjusts the line height of the title */
-    margin: 0; /* Removes default margins */
-    position: relative; /* Allows absolute positioning within the title */
-    padding-bottom: 10px; /* Adds space below the title for the line */
-    bottom: 20px;
+  display: inline-block; /* Allows the title to have width for the line */
+  font-size: 2.5em; /* Larger font size for the main title */
+  line-height: 1.1; /* Adjusts the line height of the title */
+  margin: 0; /* Removes default margins */
+  position: relative; /* Allows absolute positioning within the title */
+  padding-bottom: 10px; /* Adds space below the title for the line */
+  bottom: 20px;
 }
 
 .section-title h2::after {
-    content: '';
-    display: block;
-    height: 3px; /* Adjust the thickness of the line as needed */
-    background-color: #333; /* Color of the line */
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the line */
+  content: "";
+  display: block;
+  height: 3px; /* Adjust the thickness of the line as needed */
+  background-color: #333; /* Color of the line */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the line */
 }
 
 /* Rest of the styles for the guide-section and container */
 .accordion {
-    width: 100%;
-    max-width: 800px; /* or the width you prefer */
-    margin: auto;
+  width: 100%;
+  max-width: 800px; /* or the width you prefer */
+  margin: auto;
 }
 
 .accordion-item {
-    background-color: #fff;
-    color: #333;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
 }
 
 .accordion-title {
-    background-color: #f7f7f7;
-    color: #333;
-    cursor: pointer;
-    padding: 16px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: background-color 0.6s ease;
+  background-color: #f7f7f7;
+  color: #333;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
 }
 
 .accordion-title h2 {
-    font-size: 1.25rem;
-    margin: 0;
+  font-size: 1.25rem;
+  margin: 0;
 }
 
 .accordion-title:hover,
 .accordion-title:focus {
-    background-color: #e7e7e7;
+  background-color: #e7e7e7;
 }
 
 .accordion-content {
-    padding: 0 20px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.6s ease;
-    text-align: left;
+  padding: 0 20px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
 }
 
 .accordion-content p {
-    margin: 16px 0;
+  margin: 16px 0;
 }
 
 .custom-accordion {
-    width: 100%;
+  width: 100%;
 }
 
 .custom-accordion-item {
-    margin-bottom: 10px; /* Space between accordion items */
+  margin-bottom: 10px; /* Space between accordion items */
 }
 
 .custom-accordion-title {
-    background-color: #ffffff;
-    color: #333;
-    cursor: pointer;
-    padding: 16px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: background-color 0.6s ease;
-    border-bottom: 1px solid #090000; /* Light border for separation */
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+  border-bottom: 1px solid #090000; /* Light border for separation */
 }
 
 .custom-accordion-title h2 {
-    margin: 0;
-    font-size: 1.25rem;
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 .custom-accordion-title.active,
 .custom-accordion-title:hover {
-    background-color: #e7e7e7;
+  background-color: #e7e7e7;
 }
 
 .custom-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.6s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
 }
 
 .custom-accordion-content ul {
-    list-style: none;
-    padding: 0; /* Set padding to 0 on all sides */
-    margin: 0;
-    text-align: start;
+  list-style: none;
+  padding: 0; /* Set padding to 0 on all sides */
+  margin: 0;
+  text-align: start;
 }
 
 .custom-accordion-content li {
-    padding: 10px 0; /* Keeps the padding top and bottom for the list item */
-    border-bottom: 1px solid #eee;
+  padding: 10px 0; /* Keeps the padding top and bottom for the list item */
+  border-bottom: 1px solid #eee;
 }
 
-
 .custom-accordion-content li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .content-section {
-    padding: 40px 0;
-    background: #f9f9f9; /* Or any color that fits your design */
-    border-top: 1px solid #eaeaea; /* Adds a subtle top border */
+  padding: 40px 0;
+  background: #f9f9f9; /* Or any color that fits your design */
+  border-top: 1px solid #eaeaea; /* Adds a subtle top border */
 }
 
 .section-header {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .section-body p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-    max-width: 800px; /* Keeps lines of text at a readable length */
-    margin: auto; /* Centers the text block */
-    text-align: left;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px; /* Keeps lines of text at a readable length */
+  margin: auto; /* Centers the text block */
+  text-align: left;
 }
 
 /* Add additional styles as needed */
 .testimonials-section {
-    background: #f8f8f8; /* A light background color for the section */
-    padding: 40px 0; /* Top and bottom padding */
-    color: #333; /* Text color */
+  background: #f8f8f8; /* A light background color for the section */
+  padding: 40px 0; /* Top and bottom padding */
+  color: #333; /* Text color */
 }
 
 .testimonials-container {
-    max-width: 800px; /* Maximum width of the container */
-    margin: auto; /* Center the container */
-    padding: 0 15px; /* Padding on the sides */
+  max-width: 800px; /* Maximum width of the container */
+  margin: auto; /* Center the container */
+  padding: 0 15px; /* Padding on the sides */
 }
 
 .testimonials-header {
-    font-size: 2em; /* Header font size */
-    text-align: center; /* Center the header text */
-    margin-bottom: 30px; /* Space below the header */
+  font-size: 2em; /* Header font size */
+  text-align: center; /* Center the header text */
+  margin-bottom: 30px; /* Space below the header */
 }
 
 .testimonials-body {
-    margin-top: 20px; /* Space above the body content */
+  margin-top: 20px; /* Space above the body content */
 }
 
 .testimonial-quote {
-    font-style: italic; /* Italicize the quote */
-    position: relative; /* Positioning context for the pseudo-elements */
-    quotes: "“" "”" "‘" "’"; /* Quote styles */
-    padding-left: 50px; /* Padding to the left for the quote line */
-    line-height: 1.6; /* Line height for readability */
-    border-left: 4px solid #eaeaea; /* Border line for the quote */
-    margin: 20px 0; /* Margin around each quote */
+  font-style: italic; /* Italicize the quote */
+  position: relative; /* Positioning context for the pseudo-elements */
+  quotes: "“" "”" "‘" "’"; /* Quote styles */
+  padding-left: 50px; /* Padding to the left for the quote line */
+  line-height: 1.6; /* Line height for readability */
+  border-left: 4px solid #eaeaea; /* Border line for the quote */
+  margin: 20px 0; /* Margin around each quote */
 }
 
 .testimonial-quote:before {
-    color: #eaeaea; /* Color of the quote mark */
-    content: open-quote; /* The open-quote character */
-    font-size: 4em; /* Size of the quote mark */
-    position: absolute; /* Absolute positioning relative to the quote */
-    left: 10px; /* Position from the left */
-    top: -10px; /* Position from the top */
+  color: #eaeaea; /* Color of the quote mark */
+  content: open-quote; /* The open-quote character */
+  font-size: 4em; /* Size of the quote mark */
+  position: absolute; /* Absolute positioning relative to the quote */
+  left: 10px; /* Position from the left */
+  top: -10px; /* Position from the top */
 }
 
 .testimonial-author {
-    display: block; /* Display the author on a new line */
-    font-style: normal; /* Normal font style for the author */
-    text-align: right; /* Align the author to the right */
-    margin-top: 10px; /* Margin above the author */
-    font-weight: bold; /* Make the author's name bold */
+  display: block; /* Display the author on a new line */
+  font-style: normal; /* Normal font style for the author */
+  text-align: right; /* Align the author to the right */
+  margin-top: 10px; /* Margin above the author */
+  font-weight: bold; /* Make the author's name bold */
 }
 .features-section {
-    background: #ffffff; /* White background for a clean look */
-    padding: 40px 0; /* Spacing around the section */
+  background: #ffffff; /* White background for a clean look */
+  padding: 40px 0; /* Spacing around the section */
 }
 
 .features-container {
-    max-width: 800px; /* Maximum width to keep content readable */
-    margin: auto; /* Centering the container */
-    padding: 0 20px; /* Padding on the sides */
+  max-width: 800px; /* Maximum width to keep content readable */
+  margin: auto; /* Centering the container */
+  padding: 0 20px; /* Padding on the sides */
 }
 
 .features-header {
-    font-size: 2em; /* Large font size for the section header */
-    text-align: center; /* Center-align the header */
-    margin-bottom: 30px; /* Space below the header */
-    color: #333; /* Dark color for contrast */
+  font-size: 2em; /* Large font size for the section header */
+  text-align: center; /* Center-align the header */
+  margin-bottom: 30px; /* Space below the header */
+  color: #333; /* Dark color for contrast */
 }
 
 .feature-item {
-    margin-bottom: 20px; /* Space between each feature item */
+  margin-bottom: 20px; /* Space between each feature item */
 }
 
 .feature-item h3 {
-    font-size: 1.5em; /* Slightly larger font size for feature titles */
-    color: #007bff; /* A vibrant color to make feature titles stand out */
+  font-size: 1.5em; /* Slightly larger font size for feature titles */
+  color: #007bff; /* A vibrant color to make feature titles stand out */
 }
 
 .feature-item p {
-    font-size: 1em; /* Regular font size for the text */
-    color: #666; /* Lighter text color for readability */
-    line-height: 1.6; /* Increased line-height for better readability */
+  font-size: 1em; /* Regular font size for the text */
+  color: #666; /* Lighter text color for readability */
+  line-height: 1.6; /* Increased line-height for better readability */
 }
 
 .portfolio-showcase {
-    background-color: #fff;
-    text-align: center;
-    padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .portfolio-header h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 .portfolio-filter ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
 .portfolio-filter .filter-item {
-    display: inline-block;
-    margin-right: 20px;
-    cursor: pointer;
-    font-weight: bold;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .portfolio-filter .filter-item.active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
-    gap: 20px; /* Spacing between grid items */
-    padding: 0 50px; /* Padding on the sides */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+  gap: 20px; /* Spacing between grid items */
+  padding: 0 50px; /* Padding on the sides */
 }
 
 .portfolio-item {
-    position: relative;
-    overflow: hidden;
-    padding: 0 15px; /* Add padding to maintain spacing between images */
+  position: relative;
+  overflow: hidden;
+  padding: 0 15px; /* Add padding to maintain spacing between images */
 }
 
 .portfolio-item img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-    display: block; /* Ensures no extra space below the image */
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block; /* Ensures no extra space below the image */
 }
 
 /* Optional: Hover effect to scale image slightly */
 .portfolio-item:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 1024px) {
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
-    }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
 }
 
 @media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr; /* One column on very small screens */
-        padding: 0 20px; /* Adjust padding for very small screens */
-    }
-    
-    .portfolio-item {
-        padding: 0; /* Remove padding on very small screens */
-    }
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* One column on very small screens */
+    padding: 0 20px; /* Adjust padding for very small screens */
+  }
+
+  .portfolio-item {
+    padding: 0; /* Remove padding on very small screens */
+  }
 }
